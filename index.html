@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perritos Lindos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Conoce a Nuestros Perritos Lindos 🐾</h1>
+        <p class="subtitle">Los compañeros más adorables que encontrarás</p>
+    </header>
+
+    <main>
+        <section class="perritos-container">
+            <!-- Perrito 1 -->
+            <article class="tarjeta-perrito" id="perrito1">
+                <div class="imagen-perrito">
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&h=400&fit=crop" alt="Perrito 1 - Labrador" loading="lazy">
+                </div>
+                <div class="info-perrito">
+                    <h2>Max 🐕</h2>
+                    <p class="raza">Labrador Retriever</p>
+                    <p class="edad">2 años</p>
+                    <p class="descripcion">Max es un labrador súper cariñoso y juguetón. Le encanta nadar y jugar a buscar la pelota. Siempre está feliz de conocer nuevos amigos.</p>
+                    <div class="caracteristicas">
+                        <span class="badge">Juguetón</span>
+                        <span class="badge">Amigable</span>
+                        <span class="badge">Activo</span>
+                    </div>
+                    <button class="btn-adoptar" onclick="mostrarMensaje('Max')">¡Quiero adoptarlo!</button>
+                </div>
+            </article>
+
+            <!-- Perrito 2 -->
+            <article class="tarjeta-perrito" id="perrito2">
+                <div class="imagen-perrito">
+                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=400&fit=crop" alt="Perrito 2 - Husky" loading="lazy">
+                </div>
+                <div class="info-perrito">
+                    <h2>Luna 🐕‍🦺</h2>
+                    <p class="raza">Husky Siberiano</p>
+                    <p class="edad">1 año</p>
+                    <p class="descripcion">Luna es una husky muy dulce y tranquila. Tiene unos hermosos ojos azules y le encanta que le rasquen detrás de las orejas. Es muy buena con niños.</p>
+                    <div class="caracteristicas">
+                        <span class="badge">Tranquila</span>
+                        <span class="badge">Cariñosa</span>
+                        <span class="badge">Protectora</span>
+                    </div>
+                    <button class="btn-adoptar" onclick="mostrarMensaje('Luna')">¡Quiero adoptarlo!</button>
+                </div>
+            </article>
+
+            <!-- Perrito 3 -->
+            <article class="tarjeta-perrito" id="perrito3">
+                <div class="imagen-perrito">
+                    <img src="https://images.unsplash.com/photo-1517849845537-4d2579024541?w=400&h=400&fit=crop" alt="Perrito 3 - Beagle" loading="lazy">
+                </div>
+                <div class="info-perrito">
+                    <h2>Rocky 🐾</h2>
+                    <p class="raza">Beagle</p>
+                    <p class="edad">3 años</p>
+                    <p class="descripcion">Rocky es un beagle curioso y muy inteligente. Le encanta explorar y seguir rastros. Tiene mucha energía y es excelente compañero para hacer ejercicio.</p>
+                    <div class="caracteristicas">
+                        <span class="badge">Curioso</span>
+                        <span class="badge">Energético</span>
+                        <span class="badge">Inteligente</span>
+                    </div>
+                    <button class="btn-adoptar" onclick="mostrarMensaje('Rocky')">¡Quiero adoptarlo!</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Contenedor para mensajes -->
+        <div id="mensaje-container" class="mensaje-oculto"></div>
+    </main>
+
+    <footer>
+        <p>🐶 ¡Adopta, no compres! Estos perritos están esperando un hogar lleno de amor 🐶</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
